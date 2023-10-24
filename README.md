@@ -5,7 +5,7 @@ Script Git for clone subdirectories
 
 ### Criar um diretório, para o Git não ficar bagunçado, e entrar no mesmo.
 ```ps1 
-mkdir (comando para receber o local onde deve ser criada a pasta do projeto) && cd (pasta do projeto)
+mkdir (pasta do projeto) && cd (pasta do projeto)
 ```
 ### Iniciar um repositório Git.
 ```ps1 
