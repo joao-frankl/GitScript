@@ -1,29 +1,29 @@
 # GitScript
 Script Git for clone subdirectories
 
-## Run de following comands (Powershell ^7 or Bash)
+## Run de following comands (Powershell 7.^ or Bash)
 
-### Criar um diretório, para o Git não ficar bagunçado, e entrar no mesmo.
+### Create dir and change to the created dir
 ```ps1 
-mkdir (pasta do projeto) && cd (pasta do projeto)
+mkdir <folder_xyz> && cd <folder_xyz>
 ```
-### Iniciar um repositório Git.
+### Initiate Git.
 ```ps1 
-git init (iniciar na pasta previamente informada no primeiro comando)
+git init 
 ```
-### Rastrear o repositório, não informe o subdiretório.
+### Track the repository with the original github link as if you were cloning
 ```ps1 
-git remote add -f origin github.link
+git remote add -f origin <github-link.git>
 ```
-### Ativar o recurso de verificação em árvore.
+### Enable the tree scanning feature.
 ```ps1 
 git config core.sparseCheckout true
 ```
-### Informe apenas o subdiretório entre os ' '.
+### Enter only the subdirectory inside ' '.
 ```ps1 
-echo 'subdiretório' >> .git/info/sparse-checkout
+echo '<subdir>' >> .git/info/sparse-checkout
 ```
-### Fazer o download com o pull e não com o clone (Observe a Branch certa do repositório!)
+### Download with Pull and not with Clone (Note the right branch of the repository!)
 ```ps1 
-git pull origin master
+git pull origin main
 ```
