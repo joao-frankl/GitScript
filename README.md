@@ -1,7 +1,7 @@
 # GitScript
 Script Git for clone subdirectories
 
-## Run de following comands (Powershell 7.^ or Bash)
+## Run de following comands on Powershell 7.^ or Bash
 
 ### Create dir and change to the created dir
 ```ps1 
